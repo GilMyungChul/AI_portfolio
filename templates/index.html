@@ -4,179 +4,197 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>포트폴리오 | 당신의 이름</title>
+  <title>GILMYUNGCHUL | PORTFOLIO</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="{% static 'css/main.css' %}" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="container nav">
-		<div class="brand">
-			<span class="dot"></span>
-			<span>GilMyungChul</span>
-		</div>
-		<nav class="links">
-			<a href="#skills">기술</a>
-			<a href="#projects">프로젝트</a>
-			<a href="#experience">경험</a>
-		</nav>
-		</div>
-	</header>
+	<div class="wrap">
 
-	<main>
-		<!-- Hero -->
-		<section class="hero">
-			<div class="container">
-				<div class="hero-card">
-				<div>
-					<h1>비즈니스 문제를 데이터로 해결하고 최적화하는 전문가</h1>
-					<p class="muted">AI/머신러닝 프로젝트를 통해 실질적인 문제 해결 능력을 검증하며, 명확히 정의된 문제를 작게 나누어 빠르게 검증하는 방식을 선호합니다.</p>
-					<div class="tags">
-						<span class="tag">Python</span>
-						<span class="tag">Pandas</span>
-						<span class="tag">Numpy</span>
-						<span class="tag">Django</span>
-						<span class="tag">머신러닝</span>
-						<span class="tag">딥러닝</span>
-						<span class="tag">Java</span>
-						<span class="tag">JavaScript</span>
-					</div>
-					<div class="actions">
-						<a class="btn primary" href="#projects">프로젝트 보기</a>
-					</div>
+		<div class="left">
+			<header>
+				<div class="container nav">
+				<div class="brand">
+					<span class="dot"></span>
+					<span>GilMyungChul</span>
 				</div>
-				<div class="portrait">YOUR PHOTO</div>
+				<nav class="links">
+					<a href="#skills">기술</a>
+					<a href="#projects">프로젝트</a>
+					<a href="#experience">경험</a>
+				</nav>
 				</div>
-			</div>
-		</section>
+			</header>
 
-		<!-- Skills -->
-		<section id="skills">
-		<div class="container">
-			<div class="section-title">
-				<h2>기술 스택</h2>
-				<div class="line"></div>
-			</div>
-			<div class="grid cols-3">
-				<div class="card">
-					<h3>언어 및 프레임워크</h3>
-					<p class="muted">Python, JAVA, Javascript, Django, SQL(Oracle, mssql)</p>
+			<footer>
+				<div class="container">
+					<p class="muted">© <span id="year"></span> GilMyungChul . Portfolio</p>
 				</div>
-				<div class="card">
-					<h3>도구</h3>
-					<p class="muted">Docker, GitHub AWS (S3, CloudFront, ECS)</p>
-				</div>
-				<div class="card">
-					<h3>데이터</h3>
-					<p class="muted">Pandas, Numpy, Scikit-learn, Keres</p>
-				</div>
-			</div>
+			</footer>
 		</div>
-		</section>
+		
+		<div class="right">
 
-		<!-- Projects -->
-		<section id="projects">
-		<div class="container">
-			<div class="section-title">
-				<h2>프로젝트</h2>
-				<div class="line"></div>
-			</div>
-			<div class="grid cols-3">
-				<article class="card">
-					<div class="project-thumb"><img src="{% static '/images/project-1-thumbnail.png' %}" style="width: 100%; border-radius: 15px;" ></div>
-					<h3>따릉이 수요 예측</h3>
-					<p class="muted">보관소마다 반납 및 수요를 예측하여 사용자가 편리하게 사용할 수 있게 관리</p>
-					<div class="chips">
-						<span class="chip">머신러닝</span>
-						<span class="chip">Django</span>
-						<span class="chip">Python</span>
+			<main>
+				<!-- Hero -->
+				<section class="hero">
+					<div class="container">
+						<div class="hero-card">
+						<div>
+							<h1>비즈니스 요구를 기술적으로 구현하고, 데이터 기반으로 기능을 최적화하는 개발자</h1>
+							<p>
+								AI/머신러닝 프로젝트를 진행하며 문제를 작게 나누어 빠르게 검증하는 방식에 익숙하며,
+								백엔드 개발과 데이터 처리 전반의 구조를 이해하고 스스로 구현해보는 경험을 쌓아왔습니다.
+								<br><br>
+								신기술을 빠르게 학습하고 직접 구현하며 이해도를 높이는 것을 좋아합니다.
+								단순히 기능을 만드는 것을 넘어,
+								<strong>“왜 이렇게 설계해야 하는지”</strong>를 고민하며 효율적이고 유지보수 가능한 코드를 지향합니다.
+								작은 프로젝트라도 끝까지 완성해보는 것을 중요하게 생각하며,
+								필요하다면 새로운 기술 스택도 주저하지 않고 학습하여 적용해왔습니다.
+								<br><br>
+								개발을 통해 실제 사용자가 체감하는 변화를 만드는 것을 목표로 하며,
+								팀과 함께 의견을 나누며 성장하는 개발자가 되고자 합니다.
+							</p>
+							<!-- <div class="tags">
+								<span class="tag">Python</span>
+								<span class="tag">Pandas</span>
+								<span class="tag">Numpy</span>
+								<span class="tag">Django</span>
+								<span class="tag">Scikit-learn</span>
+								<span class="tag">Keras</span>
+								<span class="tag normal">Java</span>
+								<span class="tag normal">Oracle, MsSQL</span>
+								<span class="tag normal">JavaScript</span>
+								<span class="tag">Github</span>
+								<span class="tag">Amazon Web Service</span>
+							</div> -->
+						</div>
 					</div>
-					<div style="margin-top:30px">
-						<a class="btn" target="_blank" href="http://ec2-3-106-243-182.ap-southeast-2.compute.amazonaws.com/" aria-label="프로젝트 데모">데모</a>
-						<a class="btn" target="_blank" href="https://github.com/GilMyungChul/project_ML" aria-label="GitHub 저장소">GitHub</a>
-						<a class="btn openPopup" onclick="openModal('따릉이 수요 예측', 'project-1', '1')">상세보기</a>
+				</section>
+		
+				<!-- Skills -->
+				<section id="skills">
+				<div class="container">
+					<div class="section-title">
+						<h2>기술 스택</h2>
+						<div class="line"></div>
 					</div>
-				</article>
-				<article class="card">
-					<div class="project-thumb"><img src="{% static '/images/project-2-thumbnail.png' %}" style="width: 100%; border-radius: 15px;" ></div>
-					<h3>사용자 맞춤 여행 에이전트</h3>
-					<p class="muted">처음부터 여행을 계획하기 힘든 사람들을 위한 AI 여행 플랜 서비스</p>
-					<div class="chips">
-						<span class="chip">딥러닝</span>
-						<span class="chip">Django</span>
-						<span class="chip">Python</span>
-						<span class="chip">OpenAI</span>
-					</div>
-					<div style="margin-top:30px">
-						<a class="btn" target="_blank" href="http://ec2-3-24-138-118.ap-southeast-2.compute.amazonaws.com/" aria-label="프로젝트 데모">데모</a>
-						<a class="btn" target="_blank" href="https://github.com/GilMyungChul/project_DL" aria-label="GitHub 저장소">GitHub</a>
-						<a class="btn openPopup" onclick="openModal('AI 추천 여행 플랜', 'project-2', '2')">상세보기</a>
-					</div>
-				</article>
-				<!-- <article class="card">
-					<div class="project-thumb"></div>
-					<h3>동물의 표정 및 행동을 번역</h3>
-					<p class="muted">반려동물의 정서 상태를 정확히 파악하여 반려인과의 소통을 돕고, 행동 및 감정 문제를 조기 진단/관리하는 헬스케어 서비스를 제공</p>
-					<div class="chips">
-						<span class="chip">Storybook</span><span class="chip">ARIA</span><span class="chip">Tokens</span>
-					</div>
-					<div style="margin-top:30px">
-						<a class="btn" target="_blank" href="#" aria-label="프로젝트 데모">데모</a>
-						<a class="btn" target="_blank" href="#" aria-label="GitHub 저장소">GitHub</a>
-						<a class="btn" href="" aria-label="GitHub 저장소">상세보기</a>
-					</div>
-				</article> -->
-			</div>
-		</div>
-		</section>
-
-		<!-- Experience -->
-		<section id="experience">
-		<div class="container">
-			<div class="section-title">
-				<h2>경험</h2>
-				<div class="line"></div>
-			</div>
-			<div class="timeline">
-				<div class="item card">
-					<div>
-						<span class="badge">2025 — 현재</span>
-					</div>
-					<div>
-						<h3>기업맞춤 AI-X 융복합 인재 양성 과정</h3>
-						<p class="muted">Python, Pandas, Numpy, 머신러닝, 딥러닝, YOLO</p>
+					<div class="grid cols-3">
+						<div class="card">
+							<h3>언어 및 프레임워크</h3>
+							<p class="muted"><b>Python</b>, JAVA, Javascript, <b>Django</b>, <b>Scikit-learn</b>, <b>Keres</b>, SQL(Oracle, MsSql)</p>
+						</div>
+						<div class="card">
+							<h3>도구</h3>
+							<p class="muted">Docker, <b>GitHub</b>, <b>AWS</b></p>
+						</div>
+						<div class="card">
+							<h3>데이터</h3>
+							<p class="muted"><b>Pandas</b>, <b>Numpy</b></p>
+						</div>
 					</div>
 				</div>
-				<div class="item card">
-					<div>
-						<span class="badge">2023 — 2025</span>
+				</section>
+		
+				<!-- Projects -->
+				<section id="projects">
+				<div class="container">
+					<div class="section-title">
+						<h2>프로젝트</h2>
+						<div class="line"></div>
 					</div>
-					<div>
-						<h3>자바 개발자 - 솔루션/SI/ERP/CRM</h3>
-						<p class="muted">의사소통 및 협업 기반의 핵심 솔루션 제공. 프로세스 엔진 기반의 결재처리 및 조직 내 다양한 프로세스 관리</p>
+					<div class="grid cols-3">
+						<article class="card">
+							<div class="project-thumb"><img src="{% static '/images/project-1-thumbnail.png' %}" style="width: 100%; border-radius: 15px;" ></div>
+							<h3>따릉이 수요 예측</h3>
+							<p class="muted">보관소마다 반납 및 수요를 예측하여 사용자가 편리하게 사용할 수 있게 관리</p>
+							<div class="chips">
+								<span class="chip">머신러닝</span>
+								<span class="chip">Django</span>
+								<span class="chip">Python</span>
+							</div>
+							<div style="margin-top:30px">
+								<a class="btn" target="_blank" href="http://ec2-3-106-243-182.ap-southeast-2.compute.amazonaws.com/" aria-label="프로젝트 데모">데모</a>
+								<a class="btn" target="_blank" href="https://github.com/GilMyungChul/project_ML" aria-label="GitHub 저장소">GitHub</a>
+								<a class="btn openPopup" onclick="openModal('따릉이 수요 예측', 'project-1', '1')">상세보기</a>
+							</div>
+						</article>
+						<article class="card">
+							<div class="project-thumb"><img src="{% static '/images/project-2-thumbnail.png' %}" style="width: 100%; border-radius: 15px;" ></div>
+							<h3>사용자 맞춤 여행 에이전트</h3>
+							<p class="muted">처음부터 여행을 계획하기 힘든 사람들을 위한 AI 여행 플랜 서비스</p>
+							<div class="chips">
+								<span class="chip">딥러닝</span>
+								<span class="chip">Django</span>
+								<span class="chip">Python</span>
+								<span class="chip">OpenAI</span>
+							</div>
+							<div style="margin-top:30px">
+								<a class="btn" target="_blank" href="http://ec2-3-24-138-118.ap-southeast-2.compute.amazonaws.com/" aria-label="프로젝트 데모">데모</a>
+								<a class="btn" target="_blank" href="https://github.com/GilMyungChul/project_DL" aria-label="GitHub 저장소">GitHub</a>
+								<a class="btn openPopup" onclick="openModal('AI 추천 여행 플랜', 'project-2', '2')">상세보기</a>
+							</div>
+						</article>
+						<!-- <article class="card">
+							<div class="project-thumb"></div>
+							<h3>동물의 표정 및 행동을 번역</h3>
+							<p class="muted">반려동물의 정서 상태를 정확히 파악하여 반려인과의 소통을 돕고, 행동 및 감정 문제를 조기 진단/관리하는 헬스케어 서비스를 제공</p>
+							<div class="chips">
+								<span class="chip">Storybook</span><span class="chip">ARIA</span><span class="chip">Tokens</span>
+							</div>
+							<div style="margin-top:30px">
+								<a class="btn" target="_blank" href="#" aria-label="프로젝트 데모">데모</a>
+								<a class="btn" target="_blank" href="#" aria-label="GitHub 저장소">GitHub</a>
+								<a class="btn" href="" aria-label="GitHub 저장소">상세보기</a>
+							</div>
+						</article> -->
 					</div>
 				</div>
-				<div class="item card">
-					<div>
-						<span class="badge">2017 — 2022</span>
+				</section>
+		
+				<!-- Experience -->
+				<section id="experience">
+				<div class="container">
+					<div class="section-title">
+						<h2>경험</h2>
+						<div class="line"></div>
 					</div>
-					<div>
-						<h3>퍼블리셔 - 웹 에이전시</h3>
-						<p class="muted">다양한 웹·앱 어플리케이션 SI 및 SM</p>
+					<div class="timeline">
+						<div class="item card">
+							<div>
+								<span class="badge">2025 — 현재</span>
+							</div>
+							<div>
+								<h3>기업맞춤 AI-X 융복합 인재 양성 과정</h3>
+								<p class="muted">Python, Pandas, Numpy, 머신러닝, 딥러닝, YOLO</p>
+							</div>
+						</div>
+						<div class="item card">
+							<div>
+								<span class="badge">2023 — 2025</span>
+							</div>
+							<div>
+								<h3>자바 개발자 - 솔루션/SI/ERP/CRM</h3>
+								<p class="muted">의사소통 및 협업 기반의 핵심 솔루션 제공. 프로세스 엔진 기반의 결재처리 및 조직 내 다양한 프로세스 관리</p>
+							</div>
+						</div>
+						<div class="item card">
+							<div>
+								<span class="badge">2017 — 2022</span>
+							</div>
+							<div>
+								<h3>퍼블리셔 - 웹 에이전시</h3>
+								<p class="muted">다양한 웹·앱 어플리케이션 SI 및 SM</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+				</section>
+			</main>
 		</div>
-		</section>
-	</main>
-
-	<footer>
-		<div class="container">
-			<p class="muted">© <span id="year"></span> GilMyungChul . Portfolio</p>
-		</div>
-	</footer>
+	</div>
 
 
 	<div id="layer-wrap" class="layer-wrap" data-open="false">
